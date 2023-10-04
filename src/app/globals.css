@@ -1,0 +1,259 @@
+.boxwhite {
+    margin-top: 10%;
+    background-color: aliceblue;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: rgb(0, 119, 255);
+}
+
+/* ส่วนของ Input */
+.boxwhite input {
+    background-color: rgb(214, 214, 214);
+    border: none;
+    color: black;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+    height: 50px;
+    opacity: 0.7;
+    border-radius: 10px;
+    width: 320px;
+}
+
+h1 {
+    padding-bottom: 15px;
+    font-size: 45px;
+    color: #333;
+    opacity: 0.7;
+
+
+
+}
+
+
+
+/* ส่วนของ Button */
+button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 330px;
+}
+
+button.active {
+    background-color: white;
+
+    color: #008CBA;
+
+}
+
+/* ปรับแต่ง label */
+label {
+
+    display: block;
+    text-align: center;
+}
+
+
+input[type="text"] {
+    text-align: center;
+}
+
+/* ปรับฟอนต์ให้เป็นตัวหนา และขนาดใหญ่ */
+input[type="text"],
+button {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* แยก label กับ input และ button ด้วยระยะ */
+label+input,
+label+button {
+    margin-top: 10px;
+}
+
+a.last-password {
+    color: black;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.textre {
+    width: 100%;
+
+}
+
+.task .textre2 {
+    width: 80%;
+    font-size: 18px;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.container {
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+}
+
+#newtask {
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    border-radius: 10px;
+
+
+}
+
+#newtask input {
+    width: 75%;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid grey;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+
+    left: 0;
+    box-sizing: border-box;
+}
+
+#newtask input:focus {
+    outline: none;
+
+}
+
+
+#newtask button {
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #0d75ec;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    padding: 12px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#tasks {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.task {
+
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 1px solid #3b3b3b;
+    cursor: pointer;
+    position: relative;
+}
+
+.task span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.task .delete {
+    background-color: #a40a0a;
+
+
+    width: 10%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    padding: 6px;
+    margin-left: 625px;
+    position: fixed;
+
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.task .edit {
+    background-color: #0011a8;
+    color: #ffffff;
+
+    width: 10%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    padding: 6px;
+    margin-left: 525px;
+    position: fixed;
+}
+
+.task .save {
+    background-color: #00268f;
+    color: #ffffff;
+    height: 100%;
+    width: 10%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    padding: 6px;
+
+}
